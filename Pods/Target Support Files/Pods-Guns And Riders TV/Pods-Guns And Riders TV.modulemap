@@ -1,0 +1,6 @@
+framework module Pods_Guns_And_Riders_TV {
+  umbrella header "Pods-Guns And Riders TV-umbrella.h"
+
+  export *
+  module * { export * }
+}

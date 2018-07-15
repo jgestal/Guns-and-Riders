@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230B33AB20B9783100122871 /* GameScene+Spawner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B33AA20B9783100122871 /* GameScene+Spawner.swift */; };
+		23129BB12083BADB0003AF00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B902083BADA0003AF00 /* Random.swift */; };
+		23129BB22083BADB0003AF00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B902083BADA0003AF00 /* Random.swift */; };
+		23129BB32083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */; };
+		23129BB42083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */; };
+		23129BB52083BADB0003AF00 /* SKAction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B922083BADA0003AF00 /* SKAction+Extension.swift */; };
+		23129BB62083BADB0003AF00 /* SKAction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B922083BADA0003AF00 /* SKAction+Extension.swift */; };
+		23129BB72083BADB0003AF00 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B942083BADA0003AF00 /* Ground.swift */; };
+		23129BB82083BADB0003AF00 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B942083BADA0003AF00 /* Ground.swift */; };
+		23129BB92083BADB0003AF00 /* Barrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B962083BADA0003AF00 /* Barrel.swift */; };
+		23129BBA2083BADB0003AF00 /* Barrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B962083BADA0003AF00 /* Barrel.swift */; };
+		23129BBB2083BADB0003AF00 /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B972083BADA0003AF00 /* GameSprite.swift */; };
+		23129BBC2083BADB0003AF00 /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B972083BADA0003AF00 /* GameSprite.swift */; };
+		23129BBD2083BADB0003AF00 /* Cactus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B982083BADA0003AF00 /* Cactus.swift */; };
+		23129BBE2083BADB0003AF00 /* Cactus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B982083BADA0003AF00 /* Cactus.swift */; };
+		23129BBF2083BADB0003AF00 /* IndianKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9A2083BADA0003AF00 /* IndianKnife.swift */; };
+		23129BC02083BADB0003AF00 /* IndianKnife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9A2083BADA0003AF00 /* IndianKnife.swift */; };
+		23129BC12083BADB0003AF00 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9B2083BADA0003AF00 /* PlayerBullet.swift */; };
+		23129BC22083BADB0003AF00 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9B2083BADA0003AF00 /* PlayerBullet.swift */; };
+		23129BC32083BADB0003AF00 /* BadGuyBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9C2083BADA0003AF00 /* BadGuyBullet.swift */; };
+		23129BC42083BADB0003AF00 /* BadGuyBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9C2083BADA0003AF00 /* BadGuyBullet.swift */; };
+		23129BC52083BADB0003AF00 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9D2083BADA0003AF00 /* Projectile.swift */; };
+		23129BC62083BADB0003AF00 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9D2083BADA0003AF00 /* Projectile.swift */; };
+		23129BC72083BADB0003AF00 /* Boots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9F2083BADA0003AF00 /* Boots.swift */; };
+		23129BC82083BADB0003AF00 /* Boots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B9F2083BADA0003AF00 /* Boots.swift */; };
+		23129BC92083BADB0003AF00 /* Bullets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA02083BADA0003AF00 /* Bullets.swift */; };
+		23129BCA2083BADB0003AF00 /* Bullets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA02083BADA0003AF00 /* Bullets.swift */; };
+		23129BCB2083BADB0003AF00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA12083BADA0003AF00 /* Item.swift */; };
+		23129BCC2083BADB0003AF00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA12083BADA0003AF00 /* Item.swift */; };
+		23129BCD2083BADB0003AF00 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA22083BADA0003AF00 /* Money.swift */; };
+		23129BCE2083BADB0003AF00 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA22083BADA0003AF00 /* Money.swift */; };
+		23129BCF2083BADB0003AF00 /* Pistol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA32083BADA0003AF00 /* Pistol.swift */; };
+		23129BD02083BADB0003AF00 /* Pistol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA32083BADA0003AF00 /* Pistol.swift */; };
+		23129BD12083BADB0003AF00 /* Indian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA52083BADA0003AF00 /* Indian.swift */; };
+		23129BD22083BADB0003AF00 /* Indian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA52083BADA0003AF00 /* Indian.swift */; };
+		23129BD32083BADB0003AF00 /* BadGuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA62083BADA0003AF00 /* BadGuy.swift */; };
+		23129BD42083BADB0003AF00 /* BadGuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA62083BADA0003AF00 /* BadGuy.swift */; };
+		23129BD52083BADB0003AF00 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA72083BADA0003AF00 /* Character.swift */; };
+		23129BD62083BADB0003AF00 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA72083BADA0003AF00 /* Character.swift */; };
+		23129BD72083BADB0003AF00 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA82083BADA0003AF00 /* Enemy.swift */; };
+		23129BD82083BADB0003AF00 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA82083BADA0003AF00 /* Enemy.swift */; };
+		23129BD92083BADB0003AF00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA92083BADA0003AF00 /* Player.swift */; };
+		23129BDA2083BADB0003AF00 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BA92083BADA0003AF00 /* Player.swift */; };
+		23129BDB2083BADB0003AF00 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAA2083BADA0003AF00 /* Background.swift */; };
+		23129BDC2083BADB0003AF00 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAA2083BADA0003AF00 /* Background.swift */; };
+		23129BDD2083BADB0003AF00 /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAC2083BADA0003AF00 /* GameScene+Collisions.swift */; };
+		23129BDE2083BADB0003AF00 /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAC2083BADA0003AF00 /* GameScene+Collisions.swift */; };
+		23129BDF2083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAD2083BADA0003AF00 /* GameScene+CharacterActions.swift */; };
+		23129BE02083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAD2083BADA0003AF00 /* GameScene+CharacterActions.swift */; };
+		23129BE12083BADB0003AF00 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAE2083BADA0003AF00 /* GameScene.swift */; };
+		23129BE22083BADB0003AF00 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BAE2083BADA0003AF00 /* GameScene.swift */; };
+		23129BE32083BADB0003AF00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23129BAF2083BADB0003AF00 /* Assets.xcassets */; };
+		23129BE42083BADB0003AF00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23129BAF2083BADB0003AF00 /* Assets.xcassets */; };
+		23129BE52083BADB0003AF00 /* SoundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BB02083BADB0003AF00 /* SoundBox.swift */; };
+		23129BE62083BADB0003AF00 /* SoundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BB02083BADB0003AF00 /* SoundBox.swift */; };
+		23129BE82083BAFF0003AF00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BE72083BAFF0003AF00 /* Constants.swift */; };
+		23129BE92083BAFF0003AF00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129BE72083BAFF0003AF00 /* Constants.swift */; };
+		23129C162083BBA20003AF00 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 23129C132083BBA20003AF00 /* sprites.atlas */; };
+		23129C172083BBA20003AF00 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 23129C132083BBA20003AF00 /* sprites.atlas */; };
+		23187FAB20DD5A4E00F7A42B /* GameScene+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23187FAA20DD5A4E00F7A42B /* GameScene+Setup.swift */; };
+		2320A1AE208FCDFE00FDC898 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320A1AD208FCDFE00FDC898 /* Card.swift */; };
+		2320A1B0208FE81B00FDC898 /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2320A1AF208FE81B00FDC898 /* Poster.swift */; };
+		232FAE912083CDF3007B4C48 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE852083CDF2007B4C48 /* gameover.mp3 */; };
+		232FAE922083CDF3007B4C48 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE852083CDF2007B4C48 /* gameover.mp3 */; };
+		232FAE932083CDF3007B4C48 /* credits.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE862083CDF2007B4C48 /* credits.mp3 */; };
+		232FAE942083CDF3007B4C48 /* credits.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE862083CDF2007B4C48 /* credits.mp3 */; };
+		232FAE952083CDF3007B4C48 /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE872083CDF2007B4C48 /* shoot.mp3 */; };
+		232FAE962083CDF3007B4C48 /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE872083CDF2007B4C48 /* shoot.mp3 */; };
+		232FAE992083CDF3007B4C48 /* nobullets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE892083CDF3007B4C48 /* nobullets.mp3 */; };
+		232FAE9A2083CDF3007B4C48 /* nobullets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE892083CDF3007B4C48 /* nobullets.mp3 */; };
+		232FAE9B2083CDF3007B4C48 /* points.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8A2083CDF3007B4C48 /* points.mp3 */; };
+		232FAE9C2083CDF3007B4C48 /* points.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8A2083CDF3007B4C48 /* points.mp3 */; };
+		232FAE9D2083CDF3007B4C48 /* game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8B2083CDF3007B4C48 /* game.mp3 */; };
+		232FAE9E2083CDF3007B4C48 /* game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8B2083CDF3007B4C48 /* game.mp3 */; };
+		232FAE9F2083CDF3007B4C48 /* knife.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8C2083CDF3007B4C48 /* knife.mp3 */; };
+		232FAEA02083CDF3007B4C48 /* knife.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8C2083CDF3007B4C48 /* knife.mp3 */; };
+		232FAEA12083CDF3007B4C48 /* barrel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8D2083CDF3007B4C48 /* barrel.mp3 */; };
+		232FAEA22083CDF3007B4C48 /* barrel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8D2083CDF3007B4C48 /* barrel.mp3 */; };
+		232FAEA32083CDF3007B4C48 /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8E2083CDF3007B4C48 /* menu.mp3 */; };
+		232FAEA42083CDF3007B4C48 /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8E2083CDF3007B4C48 /* menu.mp3 */; };
+		232FAEA52083CDF3007B4C48 /* score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8F2083CDF3007B4C48 /* score.mp3 */; };
+		232FAEA62083CDF3007B4C48 /* score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE8F2083CDF3007B4C48 /* score.mp3 */; };
+		232FAEA72083CDF3007B4C48 /* item.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE902083CDF3007B4C48 /* item.mp3 */; };
+		232FAEA82083CDF3007B4C48 /* item.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 232FAE902083CDF3007B4C48 /* item.mp3 */; };
+		232FAEAB2083D0B1007B4C48 /* GameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FAEAA2083D0B1007B4C48 /* GameText.swift */; };
+		232FAEAC2083D0B1007B4C48 /* GameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FAEAA2083D0B1007B4C48 /* GameText.swift */; };
+		232FAEAE2083D8B3007B4C48 /* old_pixel-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232FAEAD2083D8B3007B4C48 /* old_pixel-7.ttf */; };
+		232FAEAF2083D8B3007B4C48 /* old_pixel-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232FAEAD2083D8B3007B4C48 /* old_pixel-7.ttf */; };
+		232FAEB12083D9F8007B4C48 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FAEB02083D9F8007B4C48 /* HUD.swift */; };
+		232FAEB22083D9F8007B4C48 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FAEB02083D9F8007B4C48 /* HUD.swift */; };
+		23470D6220EB1D6100BEE2E2 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23470D6120EB1D6100BEE2E2 /* CGVector.swift */; };
+		23482741208533DC00017AB5 /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23482740208533DC00017AB5 /* CreditsScene.swift */; };
+		23482742208533DC00017AB5 /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23482740208533DC00017AB5 /* CreditsScene.swift */; };
+		234827442085347D00017AB5 /* CardsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234827432085347D00017AB5 /* CardsBackground.swift */; };
+		235D7D8520EE3F4E0037C50F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8420EE3F4E0037C50F /* IAPHelper.swift */; };
+		235D7D8820EE41250037C50F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D7D8720EE41250037C50F /* StoreKit.framework */; };
+		235D7D8A20EE45300037C50F /* GameCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8920EE45300037C50F /* GameCenterHelper.swift */; };
+		235D7D8C20EE45760037C50F /* GADHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8B20EE45760037C50F /* GADHelper.swift */; };
+		236DBF6520F90398000AC298 /* powerdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6420F90398000AC298 /* powerdown.mp3 */; };
+		236DBF6620F90398000AC298 /* powerdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6420F90398000AC298 /* powerdown.mp3 */; };
+		236DBF6820F905AC000AC298 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6720F905AC000AC298 /* dead.mp3 */; };
+		236DBF6920F905AC000AC298 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6720F905AC000AC298 /* dead.mp3 */; };
+		236DBF6B20F905B4000AC298 /* cheat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6A20F905B4000AC298 /* cheat.mp3 */; };
+		236DBF6C20F905B4000AC298 /* cheat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6A20F905B4000AC298 /* cheat.mp3 */; };
+		2391EC9920E2AA1500EB6DA1 /* GameScene+GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391EC9820E2AA1500EB6DA1 /* GameScene+GameOver.swift */; };
+		2391EC9D20E3B90400EB6DA1 /* SKNode+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391EC9C20E3B90400EB6DA1 /* SKNode+Helpers.swift */; };
+		239900B420A0FA2600D2C765 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239900B320A0FA2600D2C765 /* MenuScene.swift */; };
+		239900B620A1174100D2C765 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239900B520A1174100D2C765 /* CGSize.swift */; };
+		23B624B120839A6D0003E407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B624B020839A6D0003E407 /* AppDelegate.swift */; };
+		23B624B920839A6D0003E407 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B624B820839A6D0003E407 /* GameViewController.swift */; };
+		23B624BC20839A6D0003E407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B624BA20839A6D0003E407 /* Main.storyboard */; };
+		23B625042083A9440003E407 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B625002083A9430003E407 /* AnalogJoystick.swift */; };
+		23B625072083A9440003E407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B625032083A9430003E407 /* AppDelegate.swift */; };
+		23B6251A2083A9B70003E407 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B625112083A9B70003E407 /* GameViewController.swift */; };
+		23B625222083A9C80003E407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B625202083A9C80003E407 /* Main.storyboard */; };
+		23B625232083A9C80003E407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B625212083A9C80003E407 /* LaunchScreen.storyboard */; };
+		23C0188F20F332FC00B026DD /* flap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23C0188E20F332FC00B026DD /* flap.mp3 */; };
+		23C0189020F332FC00B026DD /* flap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23C0188E20F332FC00B026DD /* flap.mp3 */; };
+		23C0189420F3AC4B00B026DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B625212083A9C80003E407 /* LaunchScreen.storyboard */; };
+		92A372DD548C59FFCDC6187A /* Pods_GunsAndRiders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0522054F12A967670681E36D /* Pods_GunsAndRiders.framework */; };
+		9E87B37EC5BEC58427BF5417 /* Pods_Guns_And_Riders_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C94BED8DA196B4DAEB2B002 /* Pods_Guns_And_Riders_TV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038F7EF43676D5D694D67322 /* Pods-GunsAndRiders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GunsAndRiders.release.xcconfig"; path = "Pods/Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders.release.xcconfig"; sourceTree = "<group>"; };
+		0522054F12A967670681E36D /* Pods_GunsAndRiders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GunsAndRiders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		089A197E761692C9080D4230 /* Pods-Guns And Riders TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guns And Riders TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.debug.xcconfig"; sourceTree = "<group>"; };
+		230B33AA20B9783100122871 /* GameScene+Spawner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Spawner.swift"; sourceTree = "<group>"; };
+		23129B902083BADA0003AF00 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+AnimateFrames.swift"; sourceTree = "<group>"; };
+		23129B922083BADA0003AF00 /* SKAction+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extension.swift"; sourceTree = "<group>"; };
+		23129B942083BADA0003AF00 /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		23129B962083BADA0003AF00 /* Barrel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barrel.swift; sourceTree = "<group>"; };
+		23129B972083BADA0003AF00 /* GameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
+		23129B982083BADA0003AF00 /* Cactus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cactus.swift; sourceTree = "<group>"; };
+		23129B9A2083BADA0003AF00 /* IndianKnife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndianKnife.swift; sourceTree = "<group>"; };
+		23129B9B2083BADA0003AF00 /* PlayerBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		23129B9C2083BADA0003AF00 /* BadGuyBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadGuyBullet.swift; sourceTree = "<group>"; };
+		23129B9D2083BADA0003AF00 /* Projectile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
+		23129B9F2083BADA0003AF00 /* Boots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boots.swift; sourceTree = "<group>"; };
+		23129BA02083BADA0003AF00 /* Bullets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullets.swift; sourceTree = "<group>"; };
+		23129BA12083BADA0003AF00 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		23129BA22083BADA0003AF00 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		23129BA32083BADA0003AF00 /* Pistol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pistol.swift; sourceTree = "<group>"; };
+		23129BA52083BADA0003AF00 /* Indian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indian.swift; sourceTree = "<group>"; };
+		23129BA62083BADA0003AF00 /* BadGuy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadGuy.swift; sourceTree = "<group>"; };
+		23129BA72083BADA0003AF00 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		23129BA82083BADA0003AF00 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		23129BA92083BADA0003AF00 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		23129BAA2083BADA0003AF00 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		23129BAC2083BADA0003AF00 /* GameScene+Collisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
+		23129BAD2083BADA0003AF00 /* GameScene+CharacterActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+CharacterActions.swift"; sourceTree = "<group>"; };
+		23129BAE2083BADA0003AF00 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		23129BAF2083BADB0003AF00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23129BB02083BADB0003AF00 /* SoundBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundBox.swift; sourceTree = "<group>"; };
+		23129BE72083BAFF0003AF00 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23129C132083BBA20003AF00 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		23187FAA20DD5A4E00F7A42B /* GameScene+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Setup.swift"; sourceTree = "<group>"; };
+		2320A1AD208FCDFE00FDC898 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2320A1AF208FE81B00FDC898 /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
+		232FAE852083CDF2007B4C48 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		232FAE862083CDF2007B4C48 /* credits.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = credits.mp3; sourceTree = "<group>"; };
+		232FAE872083CDF2007B4C48 /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
+		232FAE892083CDF3007B4C48 /* nobullets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nobullets.mp3; sourceTree = "<group>"; };
+		232FAE8A2083CDF3007B4C48 /* points.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = points.mp3; sourceTree = "<group>"; };
+		232FAE8B2083CDF3007B4C48 /* game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game.mp3; sourceTree = "<group>"; };
+		232FAE8C2083CDF3007B4C48 /* knife.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knife.mp3; sourceTree = "<group>"; };
+		232FAE8D2083CDF3007B4C48 /* barrel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = barrel.mp3; sourceTree = "<group>"; };
+		232FAE8E2083CDF3007B4C48 /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
+		232FAE8F2083CDF3007B4C48 /* score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = score.mp3; sourceTree = "<group>"; };
+		232FAE902083CDF3007B4C48 /* item.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = item.mp3; sourceTree = "<group>"; };
+		232FAEAA2083D0B1007B4C48 /* GameText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameText.swift; sourceTree = "<group>"; };
+		232FAEAD2083D8B3007B4C48 /* old_pixel-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "old_pixel-7.ttf"; sourceTree = "<group>"; };
+		232FAEB02083D9F8007B4C48 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		23470D6120EB1D6100BEE2E2 /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		23482740208533DC00017AB5 /* CreditsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsScene.swift; sourceTree = "<group>"; };
+		234827432085347D00017AB5 /* CardsBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsBackground.swift; sourceTree = "<group>"; };
+		235D7D8420EE3F4E0037C50F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		235D7D8720EE41250037C50F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		235D7D8920EE45300037C50F /* GameCenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterHelper.swift; sourceTree = "<group>"; };
+		235D7D8B20EE45760037C50F /* GADHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADHelper.swift; sourceTree = "<group>"; };
+		236DBF6420F90398000AC298 /* powerdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = powerdown.mp3; sourceTree = "<group>"; };
+		236DBF6720F905AC000AC298 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dead.mp3; sourceTree = "<group>"; };
+		236DBF6A20F905B4000AC298 /* cheat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheat.mp3; sourceTree = "<group>"; };
+		2391EC9820E2AA1500EB6DA1 /* GameScene+GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+GameOver.swift"; sourceTree = "<group>"; };
+		2391EC9C20E3B90400EB6DA1 /* SKNode+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Helpers.swift"; sourceTree = "<group>"; };
+		239900B320A0FA2600D2C765 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		239900B520A1174100D2C765 /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		23B624AE20839A6D0003E407 /* Guns And Riders TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guns And Riders TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B624B020839A6D0003E407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23B624B820839A6D0003E407 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		23B624BB20839A6D0003E407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23B624BF20839A700003E407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B625002083A9430003E407 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		23B625012083A9430003E407 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B625032083A9430003E407 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23B625112083A9B70003E407 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "Guns And Riders/GameViewController.swift"; sourceTree = SOURCE_ROOT; };
+		23B625202083A9C80003E407 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		23B625212083A9C80003E407 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23C0188E20F332FC00B026DD /* flap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flap.mp3; sourceTree = "<group>"; };
+		2C94BED8DA196B4DAEB2B002 /* Pods_Guns_And_Riders_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guns_And_Riders_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641FCB3F0AACA00C3163D3B0 /* Pods-Guns And Riders TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guns And Riders TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.release.xcconfig"; sourceTree = "<group>"; };
+		BFA36FCB1E2806DD00D093C3 /* GunsAndRiders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GunsAndRiders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4914C8CE30827BC8390BF8 /* Pods-GunsAndRiders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GunsAndRiders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23B624AB20839A6D0003E407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E87B37EC5BEC58427BF5417 /* Pods_Guns_And_Riders_TV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA36FC81E2806DD00D093C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235D7D8820EE41250037C50F /* StoreKit.framework in Frameworks */,
+				92A372DD548C59FFCDC6187A /* Pods_GunsAndRiders.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D72A7D895DF124B66595773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				089A197E761692C9080D4230 /* Pods-Guns And Riders TV.debug.xcconfig */,
+				641FCB3F0AACA00C3163D3B0 /* Pods-Guns And Riders TV.release.xcconfig */,
+				EF4914C8CE30827BC8390BF8 /* Pods-GunsAndRiders.debug.xcconfig */,
+				038F7EF43676D5D694D67322 /* Pods-GunsAndRiders.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		23129B8E2083BA930003AF00 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				23B7602920EF7397007C048A /* Singletons */,
+				232FAEAD2083D8B3007B4C48 /* old_pixel-7.ttf */,
+				23129BE72083BAFF0003AF00 /* Constants.swift */,
+				232FAEAA2083D0B1007B4C48 /* GameText.swift */,
+				232FAE842083CDE0007B4C48 /* Sounds */,
+				23129C132083BBA20003AF00 /* sprites.atlas */,
+				23129BAF2083BADB0003AF00 /* Assets.xcassets */,
+				2320A1AC208FCDEA00FDC898 /* Credits */,
+				23129B932083BADA0003AF00 /* Elements */,
+				23129B8F2083BADA0003AF00 /* Extensions */,
+				23129BAB2083BADA0003AF00 /* Scenes */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		23129B8F2083BADA0003AF00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23470D6120EB1D6100BEE2E2 /* CGVector.swift */,
+				23129B902083BADA0003AF00 /* Random.swift */,
+				23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */,
+				23129B922083BADA0003AF00 /* SKAction+Extension.swift */,
+				239900B520A1174100D2C765 /* CGSize.swift */,
+				2391EC9C20E3B90400EB6DA1 /* SKNode+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23129B932083BADA0003AF00 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				232FAEB02083D9F8007B4C48 /* HUD.swift */,
+				23129B942083BADA0003AF00 /* Ground.swift */,
+				23129B952083BADA0003AF00 /* GameSprites */,
+				23129BAA2083BADA0003AF00 /* Background.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		23129B952083BADA0003AF00 /* GameSprites */ = {
+			isa = PBXGroup;
+			children = (
+				23129B962083BADA0003AF00 /* Barrel.swift */,
+				23129B972083BADA0003AF00 /* GameSprite.swift */,
+				23129B982083BADA0003AF00 /* Cactus.swift */,
+				23129B992083BADA0003AF00 /* Projectiles */,
+				23129B9E2083BADA0003AF00 /* Items */,
+				23129BA42083BADA0003AF00 /* Characters */,
+			);
+			path = GameSprites;
+			sourceTree = "<group>";
+		};
+		23129B992083BADA0003AF00 /* Projectiles */ = {
+			isa = PBXGroup;
+			children = (
+				23129B9A2083BADA0003AF00 /* IndianKnife.swift */,
+				23129B9B2083BADA0003AF00 /* PlayerBullet.swift */,
+				23129B9C2083BADA0003AF00 /* BadGuyBullet.swift */,
+				23129B9D2083BADA0003AF00 /* Projectile.swift */,
+			);
+			path = Projectiles;
+			sourceTree = "<group>";
+		};
+		23129B9E2083BADA0003AF00 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				23129B9F2083BADA0003AF00 /* Boots.swift */,
+				23129BA02083BADA0003AF00 /* Bullets.swift */,
+				23129BA12083BADA0003AF00 /* Item.swift */,
+				23129BA22083BADA0003AF00 /* Money.swift */,
+				23129BA32083BADA0003AF00 /* Pistol.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		23129BA42083BADA0003AF00 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				23129BA52083BADA0003AF00 /* Indian.swift */,
+				23129BA62083BADA0003AF00 /* BadGuy.swift */,
+				23129BA72083BADA0003AF00 /* Character.swift */,
+				23129BA82083BADA0003AF00 /* Enemy.swift */,
+				23129BA92083BADA0003AF00 /* Player.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		23129BAB2083BADA0003AF00 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				23129BAE2083BADA0003AF00 /* GameScene.swift */,
+				23129BAC2083BADA0003AF00 /* GameScene+Collisions.swift */,
+				23129BAD2083BADA0003AF00 /* GameScene+CharacterActions.swift */,
+				23187FAA20DD5A4E00F7A42B /* GameScene+Setup.swift */,
+				230B33AA20B9783100122871 /* GameScene+Spawner.swift */,
+				2391EC9820E2AA1500EB6DA1 /* GameScene+GameOver.swift */,
+				23482740208533DC00017AB5 /* CreditsScene.swift */,
+				239900B320A0FA2600D2C765 /* MenuScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2320A1AC208FCDEA00FDC898 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				234827432085347D00017AB5 /* CardsBackground.swift */,
+				2320A1AD208FCDFE00FDC898 /* Card.swift */,
+				2320A1AF208FE81B00FDC898 /* Poster.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
+		232FAE842083CDE0007B4C48 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				23C0188D20F10C7400B026DD /* music */,
+				23C0188C20F10C7000B026DD /* fx */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		232FAEA92083CFF8007B4C48 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				23B625002083A9430003E407 /* AnalogJoystick.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		235D7D8620EE41250037C50F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				235D7D8720EE41250037C50F /* StoreKit.framework */,
+				2C94BED8DA196B4DAEB2B002 /* Pods_Guns_And_Riders_TV.framework */,
+				0522054F12A967670681E36D /* Pods_GunsAndRiders.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23B624AF20839A6D0003E407 /* Guns And Riders TV */ = {
+			isa = PBXGroup;
+			children = (
+				23B624B020839A6D0003E407 /* AppDelegate.swift */,
+				23B624B820839A6D0003E407 /* GameViewController.swift */,
+				23B624BA20839A6D0003E407 /* Main.storyboard */,
+				23B624BF20839A700003E407 /* Info.plist */,
+			);
+			path = "Guns And Riders TV";
+			sourceTree = "<group>";
+		};
+		23B624F12083A5C80003E407 /* Guns And Riders */ = {
+			isa = PBXGroup;
+			children = (
+				232FAEA92083CFF8007B4C48 /* Lib */,
+				23B625032083A9430003E407 /* AppDelegate.swift */,
+				23B625112083A9B70003E407 /* GameViewController.swift */,
+				23B625212083A9C80003E407 /* LaunchScreen.storyboard */,
+				23B625202083A9C80003E407 /* Main.storyboard */,
+				23B625012083A9430003E407 /* Info.plist */,
+			);
+			path = "Guns And Riders";
+			sourceTree = "<group>";
+		};
+		23B7602920EF7397007C048A /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				235D7D8420EE3F4E0037C50F /* IAPHelper.swift */,
+				235D7D8920EE45300037C50F /* GameCenterHelper.swift */,
+				235D7D8B20EE45760037C50F /* GADHelper.swift */,
+				23129BB02083BADB0003AF00 /* SoundBox.swift */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		23C0188C20F10C7000B026DD /* fx */ = {
+			isa = PBXGroup;
+			children = (
+				236DBF6720F905AC000AC298 /* dead.mp3 */,
+				236DBF6A20F905B4000AC298 /* cheat.mp3 */,
+				23C0188E20F332FC00B026DD /* flap.mp3 */,
+				236DBF6420F90398000AC298 /* powerdown.mp3 */,
+				232FAE8D2083CDF3007B4C48 /* barrel.mp3 */,
+				232FAE902083CDF3007B4C48 /* item.mp3 */,
+				232FAE8C2083CDF3007B4C48 /* knife.mp3 */,
+				232FAE892083CDF3007B4C48 /* nobullets.mp3 */,
+				232FAE8A2083CDF3007B4C48 /* points.mp3 */,
+				232FAE872083CDF2007B4C48 /* shoot.mp3 */,
+			);
+			path = fx;
+			sourceTree = "<group>";
+		};
+		23C0188D20F10C7400B026DD /* music */ = {
+			isa = PBXGroup;
+			children = (
+				232FAE852083CDF2007B4C48 /* gameover.mp3 */,
+				232FAE8B2083CDF3007B4C48 /* game.mp3 */,
+				232FAE8E2083CDF3007B4C48 /* menu.mp3 */,
+				232FAE8F2083CDF3007B4C48 /* score.mp3 */,
+				232FAE862083CDF2007B4C48 /* credits.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		BFA36FC21E2806DD00D093C3 = {
+			isa = PBXGroup;
+			children = (
+				23129B8E2083BA930003AF00 /* Shared */,
+				23B624F12083A5C80003E407 /* Guns And Riders */,
+				23B624AF20839A6D0003E407 /* Guns And Riders TV */,
+				BFA36FCC1E2806DD00D093C3 /* Products */,
+				235D7D8620EE41250037C50F /* Frameworks */,
+				1D72A7D895DF124B66595773 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA36FCC1E2806DD00D093C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFA36FCB1E2806DD00D093C3 /* GunsAndRiders.app */,
+				23B624AE20839A6D0003E407 /* Guns And Riders TV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23B624AD20839A6D0003E407 /* Guns And Riders TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23B624C020839A700003E407 /* Build configuration list for PBXNativeTarget "Guns And Riders TV" */;
+			buildPhases = (
+				F0B71F8AAAA2415FA3DFCFBA /* [CP] Check Pods Manifest.lock */,
+				23B624AA20839A6D0003E407 /* Sources */,
+				23B624AB20839A6D0003E407 /* Frameworks */,
+				23B624AC20839A6D0003E407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guns And Riders TV";
+			productName = "Guns And Riders TV";
+			productReference = 23B624AE20839A6D0003E407 /* Guns And Riders TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFA36FCA1E2806DD00D093C3 /* GunsAndRiders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA36FE31E2806DD00D093C3 /* Build configuration list for PBXNativeTarget "GunsAndRiders" */;
+			buildPhases = (
+				8AD79B6911900953DE340200 /* [CP] Check Pods Manifest.lock */,
+				BFA36FC71E2806DD00D093C3 /* Sources */,
+				BFA36FC81E2806DD00D093C3 /* Frameworks */,
+				BFA36FC91E2806DD00D093C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GunsAndRiders;
+			productName = GunsAndRiders;
+			productReference = BFA36FCB1E2806DD00D093C3 /* GunsAndRiders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFA36FC31E2806DD00D093C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Juan Gestal Romani";
+				TargetAttributes = {
+					23B624AD20839A6D0003E407 = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = 8844D67WZE;
+						ProvisioningStyle = Automatic;
+					};
+					BFA36FCA1E2806DD00D093C3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8844D67WZE;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BFA36FC61E2806DD00D093C3 /* Build configuration list for PBXProject "GunsAndRiders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFA36FC21E2806DD00D093C3;
+			productRefGroup = BFA36FCC1E2806DD00D093C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFA36FCA1E2806DD00D093C3 /* GunsAndRiders */,
+				23B624AD20839A6D0003E407 /* Guns And Riders TV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B624AC20839A6D0003E407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23129BE42083BADB0003AF00 /* Assets.xcassets in Resources */,
+				232FAE9C2083CDF3007B4C48 /* points.mp3 in Resources */,
+				232FAEA42083CDF3007B4C48 /* menu.mp3 in Resources */,
+				232FAE962083CDF3007B4C48 /* shoot.mp3 in Resources */,
+				232FAEAF2083D8B3007B4C48 /* old_pixel-7.ttf in Resources */,
+				23C0189420F3AC4B00B026DD /* LaunchScreen.storyboard in Resources */,
+				232FAE9E2083CDF3007B4C48 /* game.mp3 in Resources */,
+				232FAEA82083CDF3007B4C48 /* item.mp3 in Resources */,
+				232FAEA22083CDF3007B4C48 /* barrel.mp3 in Resources */,
+				232FAEA02083CDF3007B4C48 /* knife.mp3 in Resources */,
+				232FAE942083CDF3007B4C48 /* credits.mp3 in Resources */,
+				236DBF6C20F905B4000AC298 /* cheat.mp3 in Resources */,
+				232FAE922083CDF3007B4C48 /* gameover.mp3 in Resources */,
+				232FAEA62083CDF3007B4C48 /* score.mp3 in Resources */,
+				232FAE9A2083CDF3007B4C48 /* nobullets.mp3 in Resources */,
+				236DBF6620F90398000AC298 /* powerdown.mp3 in Resources */,
+				236DBF6920F905AC000AC298 /* dead.mp3 in Resources */,
+				23129C172083BBA20003AF00 /* sprites.atlas in Resources */,
+				23B624BC20839A6D0003E407 /* Main.storyboard in Resources */,
+				23C0189020F332FC00B026DD /* flap.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA36FC91E2806DD00D093C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232FAE912083CDF3007B4C48 /* gameover.mp3 in Resources */,
+				232FAE952083CDF3007B4C48 /* shoot.mp3 in Resources */,
+				232FAEA32083CDF3007B4C48 /* menu.mp3 in Resources */,
+				23B625222083A9C80003E407 /* Main.storyboard in Resources */,
+				23B625232083A9C80003E407 /* LaunchScreen.storyboard in Resources */,
+				232FAE932083CDF3007B4C48 /* credits.mp3 in Resources */,
+				232FAE9B2083CDF3007B4C48 /* points.mp3 in Resources */,
+				232FAEA52083CDF3007B4C48 /* score.mp3 in Resources */,
+				23129C162083BBA20003AF00 /* sprites.atlas in Resources */,
+				232FAEA12083CDF3007B4C48 /* barrel.mp3 in Resources */,
+				23C0188F20F332FC00B026DD /* flap.mp3 in Resources */,
+				236DBF6B20F905B4000AC298 /* cheat.mp3 in Resources */,
+				232FAEA72083CDF3007B4C48 /* item.mp3 in Resources */,
+				23129BE32083BADB0003AF00 /* Assets.xcassets in Resources */,
+				232FAE9F2083CDF3007B4C48 /* knife.mp3 in Resources */,
+				236DBF6520F90398000AC298 /* powerdown.mp3 in Resources */,
+				236DBF6820F905AC000AC298 /* dead.mp3 in Resources */,
+				232FAEAE2083D8B3007B4C48 /* old_pixel-7.ttf in Resources */,
+				232FAE9D2083CDF3007B4C48 /* game.mp3 in Resources */,
+				232FAE992083CDF3007B4C48 /* nobullets.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AD79B6911900953DE340200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GunsAndRiders-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B71F8AAAA2415FA3DFCFBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guns And Riders TV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B624AA20839A6D0003E407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23129BE02083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */,
+				23129BB22083BADB0003AF00 /* Random.swift in Sources */,
+				23129BD42083BADB0003AF00 /* BadGuy.swift in Sources */,
+				23129BC02083BADB0003AF00 /* IndianKnife.swift in Sources */,
+				23129BD22083BADB0003AF00 /* Indian.swift in Sources */,
+				23129BE92083BAFF0003AF00 /* Constants.swift in Sources */,
+				23129BDA2083BADB0003AF00 /* Player.swift in Sources */,
+				23129BCC2083BADB0003AF00 /* Item.swift in Sources */,
+				23129BB62083BADB0003AF00 /* SKAction+Extension.swift in Sources */,
+				23482742208533DC00017AB5 /* CreditsScene.swift in Sources */,
+				23129BCA2083BADB0003AF00 /* Bullets.swift in Sources */,
+				23129BBC2083BADB0003AF00 /* GameSprite.swift in Sources */,
+				23129BC62083BADB0003AF00 /* Projectile.swift in Sources */,
+				232FAEAC2083D0B1007B4C48 /* GameText.swift in Sources */,
+				23129BB82083BADB0003AF00 /* Ground.swift in Sources */,
+				23129BD82083BADB0003AF00 /* Enemy.swift in Sources */,
+				23129BDE2083BADB0003AF00 /* GameScene+Collisions.swift in Sources */,
+				23129BC42083BADB0003AF00 /* BadGuyBullet.swift in Sources */,
+				23129BDC2083BADB0003AF00 /* Background.swift in Sources */,
+				232FAEB22083D9F8007B4C48 /* HUD.swift in Sources */,
+				23129BC82083BADB0003AF00 /* Boots.swift in Sources */,
+				23129BD62083BADB0003AF00 /* Character.swift in Sources */,
+				23129BE62083BADB0003AF00 /* SoundBox.swift in Sources */,
+				23129BC22083BADB0003AF00 /* PlayerBullet.swift in Sources */,
+				23129BCE2083BADB0003AF00 /* Money.swift in Sources */,
+				23129BB42083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */,
+				23129BBE2083BADB0003AF00 /* Cactus.swift in Sources */,
+				23B624B920839A6D0003E407 /* GameViewController.swift in Sources */,
+				23B624B120839A6D0003E407 /* AppDelegate.swift in Sources */,
+				23129BBA2083BADB0003AF00 /* Barrel.swift in Sources */,
+				23129BE22083BADB0003AF00 /* GameScene.swift in Sources */,
+				23129BD02083BADB0003AF00 /* Pistol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFA36FC71E2806DD00D093C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23129BC52083BADB0003AF00 /* Projectile.swift in Sources */,
+				23B625072083A9440003E407 /* AppDelegate.swift in Sources */,
+				2320A1AE208FCDFE00FDC898 /* Card.swift in Sources */,
+				232FAEAB2083D0B1007B4C48 /* GameText.swift in Sources */,
+				2391EC9D20E3B90400EB6DA1 /* SKNode+Helpers.swift in Sources */,
+				23129BB32083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */,
+				23129BE12083BADB0003AF00 /* GameScene.swift in Sources */,
+				232FAEB12083D9F8007B4C48 /* HUD.swift in Sources */,
+				239900B420A0FA2600D2C765 /* MenuScene.swift in Sources */,
+				23129BD32083BADB0003AF00 /* BadGuy.swift in Sources */,
+				23129BE82083BAFF0003AF00 /* Constants.swift in Sources */,
+				23B6251A2083A9B70003E407 /* GameViewController.swift in Sources */,
+				23470D6220EB1D6100BEE2E2 /* CGVector.swift in Sources */,
+				23129BC12083BADB0003AF00 /* PlayerBullet.swift in Sources */,
+				23129BD12083BADB0003AF00 /* Indian.swift in Sources */,
+				23129BB12083BADB0003AF00 /* Random.swift in Sources */,
+				23129BC32083BADB0003AF00 /* BadGuyBullet.swift in Sources */,
+				23129BBF2083BADB0003AF00 /* IndianKnife.swift in Sources */,
+				23482741208533DC00017AB5 /* CreditsScene.swift in Sources */,
+				23129BE52083BADB0003AF00 /* SoundBox.swift in Sources */,
+				239900B620A1174100D2C765 /* CGSize.swift in Sources */,
+				23129BB92083BADB0003AF00 /* Barrel.swift in Sources */,
+				23129BDB2083BADB0003AF00 /* Background.swift in Sources */,
+				230B33AB20B9783100122871 /* GameScene+Spawner.swift in Sources */,
+				235D7D8520EE3F4E0037C50F /* IAPHelper.swift in Sources */,
+				23129BD52083BADB0003AF00 /* Character.swift in Sources */,
+				23129BBD2083BADB0003AF00 /* Cactus.swift in Sources */,
+				23129BCB2083BADB0003AF00 /* Item.swift in Sources */,
+				23B625042083A9440003E407 /* AnalogJoystick.swift in Sources */,
+				23129BCD2083BADB0003AF00 /* Money.swift in Sources */,
+				23129BCF2083BADB0003AF00 /* Pistol.swift in Sources */,
+				23187FAB20DD5A4E00F7A42B /* GameScene+Setup.swift in Sources */,
+				23129BD92083BADB0003AF00 /* Player.swift in Sources */,
+				23129BB72083BADB0003AF00 /* Ground.swift in Sources */,
+				23129BDD2083BADB0003AF00 /* GameScene+Collisions.swift in Sources */,
+				234827442085347D00017AB5 /* CardsBackground.swift in Sources */,
+				23129BC72083BADB0003AF00 /* Boots.swift in Sources */,
+				23129BD72083BADB0003AF00 /* Enemy.swift in Sources */,
+				23129BDF2083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */,
+				235D7D8A20EE45300037C50F /* GameCenterHelper.swift in Sources */,
+				235D7D8C20EE45760037C50F /* GADHelper.swift in Sources */,
+				2320A1B0208FE81B00FDC898 /* Poster.swift in Sources */,
+				23129BBB2083BADB0003AF00 /* GameSprite.swift in Sources */,
+				23129BB52083BADB0003AF00 /* SKAction+Extension.swift in Sources */,
+				2391EC9920E2AA1500EB6DA1 /* GameScene+GameOver.swift in Sources */,
+				23129BC92083BADB0003AF00 /* Bullets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23B624BA20839A6D0003E407 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23B624BB20839A6D0003E407 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23B624C120839A700003E407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089A197E761692C9080D4230 /* Pods-Guns And Riders TV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8844D67WZE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Guns And Riders TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gestal.Guns-And-Riders-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		23B624C220839A700003E407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641FCB3F0AACA00C3163D3B0 /* Pods-Guns And Riders TV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8844D67WZE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Guns And Riders TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gestal.Guns-And-Riders-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
+		BFA36FE11E2806DD00D093C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFA36FE21E2806DD00D093C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFA36FE41E2806DD00D093C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4914C8CE30827BC8390BF8 /* Pods-GunsAndRiders.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8844D67WZE;
+				INFOPLIST_FILE = "$(SRCROOT)/Guns And Riders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pixfans.Guns-and-Riders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BFA36FE51E2806DD00D093C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038F7EF43676D5D694D67322 /* Pods-GunsAndRiders.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8844D67WZE;
+				INFOPLIST_FILE = "$(SRCROOT)/Guns And Riders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pixfans.Guns-and-Riders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23B624C020839A700003E407 /* Build configuration list for PBXNativeTarget "Guns And Riders TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23B624C120839A700003E407 /* Debug */,
+				23B624C220839A700003E407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA36FC61E2806DD00D093C3 /* Build configuration list for PBXProject "GunsAndRiders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA36FE11E2806DD00D093C3 /* Debug */,
+				BFA36FE21E2806DD00D093C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA36FE31E2806DD00D093C3 /* Build configuration list for PBXNativeTarget "GunsAndRiders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA36FE41E2806DD00D093C3 /* Debug */,
+				BFA36FE51E2806DD00D093C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFA36FC31E2806DD00D093C3 /* Project object */;
+}
