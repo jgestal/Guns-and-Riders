@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		230B33AB20B9783100122871 /* GameScene+Spawner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B33AA20B9783100122871 /* GameScene+Spawner.swift */; };
-		23129BB12083BADB0003AF00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B902083BADA0003AF00 /* Random.swift */; };
-		23129BB22083BADB0003AF00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B902083BADA0003AF00 /* Random.swift */; };
 		23129BB32083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */; };
 		23129BB42083BADB0003AF00 /* SKTextureAtlas+AnimateFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */; };
 		23129BB52083BADB0003AF00 /* SKAction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129B922083BADA0003AF00 /* SKAction+Extension.swift */; };
@@ -101,10 +99,8 @@
 		23482741208533DC00017AB5 /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23482740208533DC00017AB5 /* CreditsScene.swift */; };
 		23482742208533DC00017AB5 /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23482740208533DC00017AB5 /* CreditsScene.swift */; };
 		234827442085347D00017AB5 /* CardsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234827432085347D00017AB5 /* CardsBackground.swift */; };
-		235D7D8520EE3F4E0037C50F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8420EE3F4E0037C50F /* IAPHelper.swift */; };
 		235D7D8820EE41250037C50F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235D7D8720EE41250037C50F /* StoreKit.framework */; };
 		235D7D8A20EE45300037C50F /* GameCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8920EE45300037C50F /* GameCenterHelper.swift */; };
-		235D7D8C20EE45760037C50F /* GADHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D7D8B20EE45760037C50F /* GADHelper.swift */; };
 		236DBF6520F90398000AC298 /* powerdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6420F90398000AC298 /* powerdown.mp3 */; };
 		236DBF6620F90398000AC298 /* powerdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6420F90398000AC298 /* powerdown.mp3 */; };
 		236DBF6820F905AC000AC298 /* dead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236DBF6720F905AC000AC298 /* dead.mp3 */; };
@@ -135,7 +131,6 @@
 		0522054F12A967670681E36D /* Pods_GunsAndRiders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GunsAndRiders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		089A197E761692C9080D4230 /* Pods-Guns And Riders TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guns And Riders TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.debug.xcconfig"; sourceTree = "<group>"; };
 		230B33AA20B9783100122871 /* GameScene+Spawner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Spawner.swift"; sourceTree = "<group>"; };
-		23129B902083BADA0003AF00 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTextureAtlas+AnimateFrames.swift"; sourceTree = "<group>"; };
 		23129B922083BADA0003AF00 /* SKAction+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extension.swift"; sourceTree = "<group>"; };
 		23129B942083BADA0003AF00 /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
@@ -184,10 +179,8 @@
 		23470D6120EB1D6100BEE2E2 /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
 		23482740208533DC00017AB5 /* CreditsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsScene.swift; sourceTree = "<group>"; };
 		234827432085347D00017AB5 /* CardsBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsBackground.swift; sourceTree = "<group>"; };
-		235D7D8420EE3F4E0037C50F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		235D7D8720EE41250037C50F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		235D7D8920EE45300037C50F /* GameCenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterHelper.swift; sourceTree = "<group>"; };
-		235D7D8B20EE45760037C50F /* GADHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADHelper.swift; sourceTree = "<group>"; };
 		236DBF6420F90398000AC298 /* powerdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = powerdown.mp3; sourceTree = "<group>"; };
 		236DBF6720F905AC000AC298 /* dead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dead.mp3; sourceTree = "<group>"; };
 		236DBF6A20F905B4000AC298 /* cheat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheat.mp3; sourceTree = "<group>"; };
@@ -195,6 +188,8 @@
 		2391EC9C20E3B90400EB6DA1 /* SKNode+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Helpers.swift"; sourceTree = "<group>"; };
 		239900B320A0FA2600D2C765 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		239900B520A1174100D2C765 /* CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		239F9A9F2554880500DCEA08 /* GunsAndRiders.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GunsAndRiders.entitlements; sourceTree = "<group>"; };
+		239F9B4A2555BA8C00DCEA08 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		23B624AE20839A6D0003E407 /* Guns And Riders TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guns And Riders TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B624B020839A6D0003E407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B624B820839A6D0003E407 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -267,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				23470D6120EB1D6100BEE2E2 /* CGVector.swift */,
-				23129B902083BADA0003AF00 /* Random.swift */,
 				23129B912083BADA0003AF00 /* SKTextureAtlas+AnimateFrames.swift */,
 				23129B922083BADA0003AF00 /* SKAction+Extension.swift */,
 				239900B520A1174100D2C765 /* CGSize.swift */,
@@ -380,6 +374,7 @@
 		235D7D8620EE41250037C50F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				239F9B4A2555BA8C00DCEA08 /* GoogleMobileAds.xcframework */,
 				235D7D8720EE41250037C50F /* StoreKit.framework */,
 				2C94BED8DA196B4DAEB2B002 /* Pods_Guns_And_Riders_TV.framework */,
 				0522054F12A967670681E36D /* Pods_GunsAndRiders.framework */,
@@ -414,9 +409,7 @@
 		23B7602920EF7397007C048A /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
-				235D7D8420EE3F4E0037C50F /* IAPHelper.swift */,
 				235D7D8920EE45300037C50F /* GameCenterHelper.swift */,
-				235D7D8B20EE45760037C50F /* GADHelper.swift */,
 				23129BB02083BADB0003AF00 /* SoundBox.swift */,
 			);
 			path = Singletons;
@@ -454,6 +447,7 @@
 		BFA36FC21E2806DD00D093C3 = {
 			isa = PBXGroup;
 			children = (
+				239F9A9F2554880500DCEA08 /* GunsAndRiders.entitlements */,
 				23129B8E2083BA930003AF00 /* Shared */,
 				23B624F12083A5C80003E407 /* Guns And Riders */,
 				23B624AF20839A6D0003E407 /* Guns And Riders TV */,
@@ -529,7 +523,7 @@
 					BFA36FCA1E2806DD00D093C3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8844D67WZE;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1210;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -544,6 +538,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -660,7 +655,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23129BE02083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */,
-				23129BB22083BADB0003AF00 /* Random.swift in Sources */,
 				23129BD42083BADB0003AF00 /* BadGuy.swift in Sources */,
 				23129BC02083BADB0003AF00 /* IndianKnife.swift in Sources */,
 				23129BD22083BADB0003AF00 /* Indian.swift in Sources */,
@@ -713,7 +707,6 @@
 				23470D6220EB1D6100BEE2E2 /* CGVector.swift in Sources */,
 				23129BC12083BADB0003AF00 /* PlayerBullet.swift in Sources */,
 				23129BD12083BADB0003AF00 /* Indian.swift in Sources */,
-				23129BB12083BADB0003AF00 /* Random.swift in Sources */,
 				23129BC32083BADB0003AF00 /* BadGuyBullet.swift in Sources */,
 				23129BBF2083BADB0003AF00 /* IndianKnife.swift in Sources */,
 				23482741208533DC00017AB5 /* CreditsScene.swift in Sources */,
@@ -722,7 +715,6 @@
 				23129BB92083BADB0003AF00 /* Barrel.swift in Sources */,
 				23129BDB2083BADB0003AF00 /* Background.swift in Sources */,
 				230B33AB20B9783100122871 /* GameScene+Spawner.swift in Sources */,
-				235D7D8520EE3F4E0037C50F /* IAPHelper.swift in Sources */,
 				23129BD52083BADB0003AF00 /* Character.swift in Sources */,
 				23129BBD2083BADB0003AF00 /* Cactus.swift in Sources */,
 				23129BCB2083BADB0003AF00 /* Item.swift in Sources */,
@@ -738,7 +730,6 @@
 				23129BD72083BADB0003AF00 /* Enemy.swift in Sources */,
 				23129BDF2083BADB0003AF00 /* GameScene+CharacterActions.swift in Sources */,
 				235D7D8A20EE45300037C50F /* GameCenterHelper.swift in Sources */,
-				235D7D8C20EE45760037C50F /* GADHelper.swift in Sources */,
 				2320A1B0208FE81B00FDC898 /* Poster.swift in Sources */,
 				23129BBB2083BADB0003AF00 /* GameSprite.swift in Sources */,
 				23129BB52083BADB0003AF00 /* SKAction+Extension.swift in Sources */,
@@ -922,15 +913,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GunsAndRiders.entitlements;
 				DEVELOPMENT_TEAM = 8844D67WZE;
 				INFOPLIST_FILE = "$(SRCROOT)/Guns And Riders/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pixfans.Guns-and-Riders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -940,14 +933,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GunsAndRiders.entitlements;
 				DEVELOPMENT_TEAM = 8844D67WZE;
 				INFOPLIST_FILE = "$(SRCROOT)/Guns And Riders/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pixfans.Guns-and-Riders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

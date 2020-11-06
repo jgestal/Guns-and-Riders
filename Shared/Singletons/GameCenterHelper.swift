@@ -24,7 +24,7 @@ class GameCenterHelper {
     
     func authenticateLocalPlayer() {
         
-        let localPlayer = GKLocalPlayer.localPlayer()
+        let localPlayer = GKLocalPlayer.local
         localPlayer.authenticateHandler =  {(viewController : UIViewController?, error : Error?) -> Void in
             if let viewController = viewController {
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -40,7 +40,7 @@ class GameCenterHelper {
     }
     
     func isAuthenticated() -> Bool {
-        return GKLocalPlayer.localPlayer().isAuthenticated
+        return GKLocalPlayer.local.isAuthenticated
     }
     
     func checkForAchievements(userScore: Int) {

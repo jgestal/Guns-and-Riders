@@ -72,14 +72,12 @@ extension GameScene {
         let scale = SKAction.scale(to: 1.0, duration: 1.0)
         let moveAndScale = SKAction.group([move,scale])
         
-        let showAd = SKAction.run {
-            GADHelper.shared.showAd()
-        }
+      
         
         let playSound = SKAction.run {
             SoundBox.shared.playMusic(music: "score", numberOfLoops: 0)
         }
-        scoreBoard.run(SKAction.sequence([moveAndScale,showAd,playSound]))
+        scoreBoard.run(SKAction.sequence([moveAndScale,playSound]))
         
     }
 }

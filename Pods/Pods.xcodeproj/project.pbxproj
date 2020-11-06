@@ -7,197 +7,163 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D2E3553C4E4B02BB5DFB75867C0F7F4 /* Pods-GunsAndRiders-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA5E5CFC8778FFDD0954CB5EDD6132D /* Pods-GunsAndRiders-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13DB37AE6BE3D373B26A43F67305A1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4B7419222347526ECFC8F429DB41D2FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		578AA6E17199A85CC7B0646931BD73B9 /* Pods-Guns And Riders TV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B7D753B68D30FE8DBB0613C347080C /* Pods-Guns And Riders TV-dummy.m */; };
-		788895BB30D2AED909844B8A48AC1F74 /* Pods-GunsAndRiders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BAC165ABBEBFFC49729EDE05A9A626 /* Pods-GunsAndRiders-dummy.m */; };
-		CAE4F40AA7C360BBA42A6A3374C387C4 /* Pods-Guns And Riders TV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDECD4443026721650FCA866990EA984 /* Pods-Guns And Riders TV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		412BFB1A2FF0C3BA0A47D77FA9A37E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5B809628BC8DB3FBC36BA94D4488E8D9 /* Pods-GunsAndRiders-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06EAF6DE179EFC8148CFDFC614E05DFB /* Pods-GunsAndRiders-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F6888F6CFA573325368AFF12D441CC /* Pods-Guns And Riders TV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F651B3392B621F191EE9D16D5C8936 /* Pods-Guns And Riders TV-dummy.m */; };
+		A6F1E368C9D3C81AC0E0DC0CBDDBA112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BAF0B91D1D7BE1A1CB445CD5DD279B2B /* Pods-GunsAndRiders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E5EC972DBEEFF44AD6711244D5FBD8 /* Pods-GunsAndRiders-dummy.m */; };
+		F0247CD7B6E654E39620566847FC3CEF /* Pods-Guns And Riders TV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C8C067D1FEE4C4C96EE90537A15297 /* Pods-Guns And Riders TV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		031BF484EC90584E7B07C3E396253B5C /* Pods-Guns And Riders TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Guns And Riders TV.debug.xcconfig"; sourceTree = "<group>"; };
-		30B595B886341C0D355A7D2F0F37D05F /* Pods-GunsAndRiders-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GunsAndRiders-acknowledgements.markdown"; sourceTree = "<group>"; };
-		382A0ECE65D8F92D0A157851CDF4DC9E /* Pods-GunsAndRiders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GunsAndRiders.debug.xcconfig"; sourceTree = "<group>"; };
-		3B13F5763DBFB9535BE71EE0896EC95D /* Pods-Guns And Riders TV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Guns And Riders TV-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4C76E32FAE412FE083482475FE9EB3B9 /* Pods_GunsAndRiders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GunsAndRiders.framework; path = "Pods-GunsAndRiders.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		530147796F64B1318F884BA7661DE748 /* Pods-GunsAndRiders-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GunsAndRiders-acknowledgements.plist"; sourceTree = "<group>"; };
-		53AF9633F743AC51D14729E8E4EA75FC /* Pods-Guns And Riders TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Guns And Riders TV.release.xcconfig"; sourceTree = "<group>"; };
-		5CA5E5CFC8778FFDD0954CB5EDD6132D /* Pods-GunsAndRiders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GunsAndRiders-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6AB005EB04D6D49582371405AEC383F6 /* Pods-Guns And Riders TV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Guns And Riders TV-frameworks.sh"; sourceTree = "<group>"; };
-		78C640BD8E4707D6847851D0D2F39490 /* Pods-GunsAndRiders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GunsAndRiders.release.xcconfig"; sourceTree = "<group>"; };
-		87BAC165ABBEBFFC49729EDE05A9A626 /* Pods-GunsAndRiders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GunsAndRiders-dummy.m"; sourceTree = "<group>"; };
-		909477968A2C20EFE2E7093F182DE63D /* Pods-GunsAndRiders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GunsAndRiders.modulemap"; sourceTree = "<group>"; };
-		924D3C9CCDD7D1CDE99922248E5BCD3A /* Pods-Guns And Riders TV-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Guns And Riders TV-resources.sh"; sourceTree = "<group>"; };
-		92B7D753B68D30FE8DBB0613C347080C /* Pods-Guns And Riders TV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Guns And Riders TV-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AEE5BD54347F67F79E40CE0475F50011 /* Pods-GunsAndRiders-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GunsAndRiders-resources.sh"; sourceTree = "<group>"; };
-		BB40B6CA3DA47994581962ACEE0CA6F1 /* Pods_Guns_And_Riders_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Guns_And_Riders_TV.framework; path = "Pods-Guns And Riders TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE5B6486B57E0FECC8E02F82160353D /* Pods-Guns And Riders TV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Guns And Riders TV-acknowledgements.plist"; sourceTree = "<group>"; };
-		C3485DDC33BA225449D8679269764976 /* Pods-GunsAndRiders-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GunsAndRiders-frameworks.sh"; sourceTree = "<group>"; };
-		C8E565BD820E0DEAAF8D25DE3BB79250 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0A7E8A5F45AC76287E2429E5AADF839 /* Pods-Guns And Riders TV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Guns And Riders TV.modulemap"; sourceTree = "<group>"; };
-		E72C4F7CE3E1806DE1F780C11B9AEE43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDECD4443026721650FCA866990EA984 /* Pods-Guns And Riders TV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Guns And Riders TV-umbrella.h"; sourceTree = "<group>"; };
-		F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		06EAF6DE179EFC8148CFDFC614E05DFB /* Pods-GunsAndRiders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GunsAndRiders-umbrella.h"; sourceTree = "<group>"; };
+		1428E57F2AF13DF01813F54141B168B8 /* Pods-GunsAndRiders-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GunsAndRiders-acknowledgements.plist"; sourceTree = "<group>"; };
+		1710917822D5AA42F8C1343749CCA937 /* Pods-GunsAndRiders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GunsAndRiders.debug.xcconfig"; sourceTree = "<group>"; };
+		339D5463D0A9B91199A7BC19A9578557 /* Pods-GunsAndRiders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GunsAndRiders.release.xcconfig"; sourceTree = "<group>"; };
+		341E805B841FDCF4BAD1FAF3D862F18D /* Pods_GunsAndRiders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GunsAndRiders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4953F9ACC83E710CC0B0A93DE10B68 /* Pods-Guns And Riders TV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Guns And Riders TV-Info.plist"; sourceTree = "<group>"; };
+		4F83E1912A4CB9623B9BDEB9D8A325E9 /* Pods-GunsAndRiders-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GunsAndRiders-Info.plist"; sourceTree = "<group>"; };
+		59EF32E62496CCC4AE9AB23DAFE398B8 /* Pods-GunsAndRiders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GunsAndRiders.modulemap"; sourceTree = "<group>"; };
+		71B615FF878ACAAC165DBE0822157A9F /* Pods-Guns And Riders TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Guns And Riders TV.release.xcconfig"; sourceTree = "<group>"; };
+		72F651B3392B621F191EE9D16D5C8936 /* Pods-Guns And Riders TV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Guns And Riders TV-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		86511AA6BFA590DB38897F9A640CF8F7 /* Pods-Guns And Riders TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Guns And Riders TV.debug.xcconfig"; sourceTree = "<group>"; };
+		90C8C067D1FEE4C4C96EE90537A15297 /* Pods-Guns And Riders TV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Guns And Riders TV-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3B48FAF9402358F5CADCDD1FF4E1AD1 /* Pods-Guns And Riders TV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Guns And Riders TV-acknowledgements.plist"; sourceTree = "<group>"; };
+		D6EA3015B8DC867EBE4AD2009DBA83F6 /* Pods-Guns And Riders TV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Guns And Riders TV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E07C59B479B9887BEE1057F9729B2B07 /* Pods-GunsAndRiders-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GunsAndRiders-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F09154576E76AB245747EB6F326FBB78 /* Pods_Guns_And_Riders_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guns_And_Riders_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E5EC972DBEEFF44AD6711244D5FBD8 /* Pods-GunsAndRiders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GunsAndRiders-dummy.m"; sourceTree = "<group>"; };
+		FC908309507CC4A8EB147A42F97D5544 /* Pods-Guns And Riders TV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Guns And Riders TV.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2973E99DC1992A9C9476C19D7EAFEF5A /* Frameworks */ = {
+		7069457A3B9210F21EE71024A6187402 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7419222347526ECFC8F429DB41D2FA /* Foundation.framework in Frameworks */,
+				A6F1E368C9D3C81AC0E0DC0CBDDBA112 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36FBD3303B1DB9EE1D9F04C9EFF322F6 /* Frameworks */ = {
+		EADF086A7D8366CDFCCB43A633EBF804 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13DB37AE6BE3D373B26A43F67305A1F0 /* Foundation.framework in Frameworks */,
+				412BFB1A2FF0C3BA0A47D77FA9A37E6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B226BE4CA568D01CD5B412328D534AE /* Targets Support Files */ = {
+		46E868054B38AECD469027B884EAB3CE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EB7CB8435D29772C1D9B1C0AED1FD6F /* Pods-Guns And Riders TV */,
-				F0C0F375B3D47BB4EF57D142B6FF5A99 /* Pods-GunsAndRiders */,
+				B3A7D6FFCA8A16458BD029C468990896 /* Pods-Guns And Riders TV */,
+				4EC7E2CFB638C72AAF56D4FCC67F11AB /* Pods-GunsAndRiders */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		4EC7E2CFB638C72AAF56D4FCC67F11AB /* Pods-GunsAndRiders */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				820FBBDA65C5B1A6A4C379A893C27235 /* Pods */,
-				ED19A88122F98CB85C7122E589DFE8D5 /* Products */,
-				7B226BE4CA568D01CD5B412328D534AE /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		820FBBDA65C5B1A6A4C379A893C27235 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E91D6015731707498AAA5817D350B87B /* Google-Mobile-Ads-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F87BBE855D70C2F87C02A1CCA30E262D /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9EB7CB8435D29772C1D9B1C0AED1FD6F /* Pods-Guns And Riders TV */ = {
-			isa = PBXGroup;
-			children = (
-				E72C4F7CE3E1806DE1F780C11B9AEE43 /* Info.plist */,
-				D0A7E8A5F45AC76287E2429E5AADF839 /* Pods-Guns And Riders TV.modulemap */,
-				3B13F5763DBFB9535BE71EE0896EC95D /* Pods-Guns And Riders TV-acknowledgements.markdown */,
-				BBE5B6486B57E0FECC8E02F82160353D /* Pods-Guns And Riders TV-acknowledgements.plist */,
-				92B7D753B68D30FE8DBB0613C347080C /* Pods-Guns And Riders TV-dummy.m */,
-				6AB005EB04D6D49582371405AEC383F6 /* Pods-Guns And Riders TV-frameworks.sh */,
-				924D3C9CCDD7D1CDE99922248E5BCD3A /* Pods-Guns And Riders TV-resources.sh */,
-				EDECD4443026721650FCA866990EA984 /* Pods-Guns And Riders TV-umbrella.h */,
-				031BF484EC90584E7B07C3E396253B5C /* Pods-Guns And Riders TV.debug.xcconfig */,
-				53AF9633F743AC51D14729E8E4EA75FC /* Pods-Guns And Riders TV.release.xcconfig */,
-			);
-			name = "Pods-Guns And Riders TV";
-			path = "Target Support Files/Pods-Guns And Riders TV";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E91D6015731707498AAA5817D350B87B /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				953FD61A3CECC96530CB5CA297A086C1 /* Frameworks */,
-			);
-			name = "Google-Mobile-Ads-SDK";
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		ED19A88122F98CB85C7122E589DFE8D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BB40B6CA3DA47994581962ACEE0CA6F1 /* Pods_Guns_And_Riders_TV.framework */,
-				4C76E32FAE412FE083482475FE9EB3B9 /* Pods_GunsAndRiders.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F0C0F375B3D47BB4EF57D142B6FF5A99 /* Pods-GunsAndRiders */ = {
-			isa = PBXGroup;
-			children = (
-				C8E565BD820E0DEAAF8D25DE3BB79250 /* Info.plist */,
-				909477968A2C20EFE2E7093F182DE63D /* Pods-GunsAndRiders.modulemap */,
-				30B595B886341C0D355A7D2F0F37D05F /* Pods-GunsAndRiders-acknowledgements.markdown */,
-				530147796F64B1318F884BA7661DE748 /* Pods-GunsAndRiders-acknowledgements.plist */,
-				87BAC165ABBEBFFC49729EDE05A9A626 /* Pods-GunsAndRiders-dummy.m */,
-				C3485DDC33BA225449D8679269764976 /* Pods-GunsAndRiders-frameworks.sh */,
-				AEE5BD54347F67F79E40CE0475F50011 /* Pods-GunsAndRiders-resources.sh */,
-				5CA5E5CFC8778FFDD0954CB5EDD6132D /* Pods-GunsAndRiders-umbrella.h */,
-				382A0ECE65D8F92D0A157851CDF4DC9E /* Pods-GunsAndRiders.debug.xcconfig */,
-				78C640BD8E4707D6847851D0D2F39490 /* Pods-GunsAndRiders.release.xcconfig */,
+				59EF32E62496CCC4AE9AB23DAFE398B8 /* Pods-GunsAndRiders.modulemap */,
+				E07C59B479B9887BEE1057F9729B2B07 /* Pods-GunsAndRiders-acknowledgements.markdown */,
+				1428E57F2AF13DF01813F54141B168B8 /* Pods-GunsAndRiders-acknowledgements.plist */,
+				F9E5EC972DBEEFF44AD6711244D5FBD8 /* Pods-GunsAndRiders-dummy.m */,
+				4F83E1912A4CB9623B9BDEB9D8A325E9 /* Pods-GunsAndRiders-Info.plist */,
+				06EAF6DE179EFC8148CFDFC614E05DFB /* Pods-GunsAndRiders-umbrella.h */,
+				1710917822D5AA42F8C1343749CCA937 /* Pods-GunsAndRiders.debug.xcconfig */,
+				339D5463D0A9B91199A7BC19A9578557 /* Pods-GunsAndRiders.release.xcconfig */,
 			);
 			name = "Pods-GunsAndRiders";
 			path = "Target Support Files/Pods-GunsAndRiders";
 			sourceTree = "<group>";
 		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		802FC88B48A0BDEA6B5DBB2E233B480F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F09154576E76AB245747EB6F326FBB78 /* Pods_Guns_And_Riders_TV.framework */,
+				341E805B841FDCF4BAD1FAF3D862F18D /* Pods_GunsAndRiders.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3A7D6FFCA8A16458BD029C468990896 /* Pods-Guns And Riders TV */ = {
+			isa = PBXGroup;
+			children = (
+				FC908309507CC4A8EB147A42F97D5544 /* Pods-Guns And Riders TV.modulemap */,
+				D6EA3015B8DC867EBE4AD2009DBA83F6 /* Pods-Guns And Riders TV-acknowledgements.markdown */,
+				C3B48FAF9402358F5CADCDD1FF4E1AD1 /* Pods-Guns And Riders TV-acknowledgements.plist */,
+				72F651B3392B621F191EE9D16D5C8936 /* Pods-Guns And Riders TV-dummy.m */,
+				4A4953F9ACC83E710CC0B0A93DE10B68 /* Pods-Guns And Riders TV-Info.plist */,
+				90C8C067D1FEE4C4C96EE90537A15297 /* Pods-Guns And Riders TV-umbrella.h */,
+				86511AA6BFA590DB38897F9A640CF8F7 /* Pods-Guns And Riders TV.debug.xcconfig */,
+				71B615FF878ACAAC165DBE0822157A9F /* Pods-Guns And Riders TV.release.xcconfig */,
+			);
+			name = "Pods-Guns And Riders TV";
+			path = "Target Support Files/Pods-Guns And Riders TV";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				802FC88B48A0BDEA6B5DBB2E233B480F /* Products */,
+				46E868054B38AECD469027B884EAB3CE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6EF169C74CF23AF081CCC6980FD52B5B /* Headers */ = {
+		10402ADFEA82D9A973C3D339AA6F5C09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D2E3553C4E4B02BB5DFB75867C0F7F4 /* Pods-GunsAndRiders-umbrella.h in Headers */,
+				5B809628BC8DB3FBC36BA94D4488E8D9 /* Pods-GunsAndRiders-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4BB9ECAA825D57600C6F10270570DFA /* Headers */ = {
+		3BB03E1098665983D4582F93FB426064 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE4F40AA7C360BBA42A6A3374C387C4 /* Pods-Guns And Riders TV-umbrella.h in Headers */,
+				F0247CD7B6E654E39620566847FC3CEF /* Pods-Guns And Riders TV-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4478F51AE248F520615B05361CEAE27F /* Pods-Guns And Riders TV */ = {
+		4E30A728A109A2AAEDC2CC3C3163A9EE /* Pods-Guns And Riders TV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D6324A117C9D50EC7A70D2747B20983 /* Build configuration list for PBXNativeTarget "Pods-Guns And Riders TV" */;
+			buildConfigurationList = 928F93215B8C1F14C6E951A495D3BA6C /* Build configuration list for PBXNativeTarget "Pods-Guns And Riders TV" */;
 			buildPhases = (
-				5E0BFE1ACDD9C6D924138329A22C249E /* Sources */,
-				2973E99DC1992A9C9476C19D7EAFEF5A /* Frameworks */,
-				C4BB9ECAA825D57600C6F10270570DFA /* Headers */,
+				3BB03E1098665983D4582F93FB426064 /* Headers */,
+				7E524966D1269E2CD21778062AE18626 /* Sources */,
+				EADF086A7D8366CDFCCB43A633EBF804 /* Frameworks */,
+				E8C83CA094500E4871196EF3022DA1B7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -205,16 +171,17 @@
 			);
 			name = "Pods-Guns And Riders TV";
 			productName = "Pods-Guns And Riders TV";
-			productReference = BB40B6CA3DA47994581962ACEE0CA6F1 /* Pods_Guns_And_Riders_TV.framework */;
+			productReference = F09154576E76AB245747EB6F326FBB78 /* Pods_Guns_And_Riders_TV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4C7EA589E4B7C94CC56A318B96C25921 /* Pods-GunsAndRiders */ = {
+		7316423D7162FCBC2BE3A3C06AE37770 /* Pods-GunsAndRiders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5FA8DF394695F28890A05594AA15881 /* Build configuration list for PBXNativeTarget "Pods-GunsAndRiders" */;
+			buildConfigurationList = 8F368A35F7AA788AE8677989728BF4F7 /* Build configuration list for PBXNativeTarget "Pods-GunsAndRiders" */;
 			buildPhases = (
-				C019B6629C311D1CE42B84E3F37A220E /* Sources */,
-				36FBD3303B1DB9EE1D9F04C9EFF322F6 /* Frameworks */,
-				6EF169C74CF23AF081CCC6980FD52B5B /* Headers */,
+				10402ADFEA82D9A973C3D339AA6F5C09 /* Headers */,
+				30820FD32F648B5EAB64BAB4D5DC6C0A /* Sources */,
+				7069457A3B9210F21EE71024A6187402 /* Frameworks */,
+				867FE18105215F1E81AD65DC0629A308 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -222,63 +189,80 @@
 			);
 			name = "Pods-GunsAndRiders";
 			productName = "Pods-GunsAndRiders";
-			productReference = 4C76E32FAE412FE083482475FE9EB3B9 /* Pods_GunsAndRiders.framework */;
+			productReference = 341E805B841FDCF4BAD1FAF3D862F18D /* Pods_GunsAndRiders.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1210;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = ED19A88122F98CB85C7122E589DFE8D5 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 802FC88B48A0BDEA6B5DBB2E233B480F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4478F51AE248F520615B05361CEAE27F /* Pods-Guns And Riders TV */,
-				4C7EA589E4B7C94CC56A318B96C25921 /* Pods-GunsAndRiders */,
+				4E30A728A109A2AAEDC2CC3C3163A9EE /* Pods-Guns And Riders TV */,
+				7316423D7162FCBC2BE3A3C06AE37770 /* Pods-GunsAndRiders */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		5E0BFE1ACDD9C6D924138329A22C249E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		867FE18105215F1E81AD65DC0629A308 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578AA6E17199A85CC7B0646931BD73B9 /* Pods-Guns And Riders TV-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C019B6629C311D1CE42B84E3F37A220E /* Sources */ = {
+		E8C83CA094500E4871196EF3022DA1B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30820FD32F648B5EAB64BAB4D5DC6C0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788895BB30D2AED909844B8A48AC1F74 /* Pods-GunsAndRiders-dummy.m in Sources */,
+				BAF0B91D1D7BE1A1CB445CD5DD279B2B /* Pods-GunsAndRiders-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E524966D1269E2CD21778062AE18626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F6888F6CFA573325368AFF12D441CC /* Pods-Guns And Riders TV-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2A68342D814EECF76C86352E81105493 /* Release */ = {
+		014DDCF2C9C76C36FE6D87305B49DF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53AF9633F743AC51D14729E8E4EA75FC /* Pods-Guns And Riders TV.release.xcconfig */;
+			baseConfigurationReference = 86511AA6BFA590DB38897F9A640CF8F7 /* Pods-Guns And Riders TV.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -287,9 +271,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Guns And Riders TV/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.modulemap";
@@ -301,19 +285,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		372BB35D7429833E6D5DE25B8D51B364 /* Release */ = {
+		2C8CD2B6D128EB27FAD9196AF100C3A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C640BD8E4707D6847851D0D2F39490 /* Pods-GunsAndRiders.release.xcconfig */;
+			baseConfigurationReference = 339D5463D0A9B91199A7BC19A9578557 /* Pods-GunsAndRiders.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -322,9 +304,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GunsAndRiders/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders.modulemap";
@@ -342,10 +324,45 @@
 			};
 			name = Release;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		4C9EB0457C22DAEF125FD5E2B94B6833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B615FF878ACAAC165DBE0822157A9F /* Pods-Guns And Riders TV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -368,14 +385,74 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -395,81 +472,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		E4C1F3686AE8BE99E12EAB0800F2F3D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		594E074D53515CCF4BE811331E870EF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 031BF484EC90584E7B07C3E396253B5C /* Pods-Guns And Riders TV.debug.xcconfig */;
+			baseConfigurationReference = 1710917822D5AA42F8C1343749CCA937 /* Pods-GunsAndRiders.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -478,43 +499,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Guns And Riders TV/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Guns And Riders TV/Pods-Guns And Riders TV.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B95F27AA84509DC32143BC072F3FCD1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 382A0ECE65D8F92D0A157851CDF4DC9E /* Pods-GunsAndRiders.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GunsAndRiders/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GunsAndRiders/Pods-GunsAndRiders.modulemap";
@@ -534,34 +521,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D6324A117C9D50EC7A70D2747B20983 /* Build configuration list for PBXNativeTarget "Pods-Guns And Riders TV" */ = {
+		8F368A35F7AA788AE8677989728BF4F7 /* Build configuration list for PBXNativeTarget "Pods-GunsAndRiders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				594E074D53515CCF4BE811331E870EF2 /* Debug */,
-				2A68342D814EECF76C86352E81105493 /* Release */,
+				E4C1F3686AE8BE99E12EAB0800F2F3D8 /* Debug */,
+				2C8CD2B6D128EB27FAD9196AF100C3A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5FA8DF394695F28890A05594AA15881 /* Build configuration list for PBXNativeTarget "Pods-GunsAndRiders" */ = {
+		928F93215B8C1F14C6E951A495D3BA6C /* Build configuration list for PBXNativeTarget "Pods-Guns And Riders TV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B95F27AA84509DC32143BC072F3FCD1D /* Debug */,
-				372BB35D7429833E6D5DE25B8D51B364 /* Release */,
+				014DDCF2C9C76C36FE6D87305B49DF49 /* Debug */,
+				4C9EB0457C22DAEF125FD5E2B94B6833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

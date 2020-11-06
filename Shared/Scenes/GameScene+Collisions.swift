@@ -63,12 +63,13 @@ extension GameScene: SKPhysicsContactDelegate {
         enemyBullet.removeFromParent()
         
         let textList = ["ARGH!","OUCH!","NOO!","BYE", "R.I.P.", "DEAD!"]
-        let randomElement = Int.random(0, textList.count - 1)
+        let randomElement = Int.random(in: 0..<textList.count)
+            
         showText(textList[randomElement], position: player.position)
         player.die()
         run(SoundBox.shared.fxDead)
         SoundBox.shared.playMusic(music: "gameover", numberOfLoops: 0)
-        #if os(iOS)
+        #if os(iOS) && !targetEnvironment(macCatalyst)
         let fade = SKAction.fadeAlpha(to: 0, duration: 0.2)
         let remove = SKAction.run {
             self.joystick.removeFromParent()
@@ -124,8 +125,6 @@ extension GameScene: SKPhysicsContactDelegate {
         item.removeFromParent()
     }
     
-    
-    
     func didBegin(_ contact: SKPhysicsContact) {
 
         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
@@ -134,47 +133,48 @@ extension GameScene: SKPhysicsContactDelegate {
             
         // Player Bullet <-> Enemy
         case PhysicsCategory.enemy.rawValue | PhysicsCategory.playerBullet.rawValue:
-            let enemy = contact.bodyA.categoryBitMask == PhysicsCategory.enemy.rawValue ? contact.bodyA.node : contact.bodyB.node
-            let playerBullet = contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node
-            collision(ofPlayerBullet: playerBullet as! PlayerBullet, withEnemy: enemy as! Enemy)
+            
+            if  let enemy = (contact.bodyA.categoryBitMask == PhysicsCategory.enemy.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Enemy,
+                let playerBullet = (contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node) as? PlayerBullet {
+                collision(ofPlayerBullet: playerBullet, withEnemy: enemy)
+            }
             
         // Player Bullet <-> Barrel
         // Enemy Bullet <-> Barrel
         case PhysicsCategory.playerBullet.rawValue | PhysicsCategory.barrel.rawValue,
              PhysicsCategory.enemyBullet.rawValue | PhysicsCategory.barrel.rawValue:
 
-            let barrel =  contact.bodyA.categoryBitMask == PhysicsCategory.barrel.rawValue ? contact.bodyA.node : contact.bodyB.node
-            let projectile = contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node
-            
-            collision(ofProjectile: projectile as! Projectile, withBarrel: barrel as! Barrel)
+            if let barrel =  (contact.bodyA.categoryBitMask == PhysicsCategory.barrel.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Barrel,
+               let projectile = (contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Projectile {
+                collision(ofProjectile: projectile, withBarrel: barrel)
+            }
        
         // Player Bullet <-> Cactus
         // Enemy Bullet <-> Cactus
         case PhysicsCategory.playerBullet.rawValue | PhysicsCategory.cactus.rawValue,
              PhysicsCategory.enemyBullet.rawValue | PhysicsCategory.cactus.rawValue:
 
-            let cactus = contact.bodyA.categoryBitMask == PhysicsCategory.cactus.rawValue ? contact.bodyA.node : contact.bodyB.node
-            let projectile = contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node
-            
-            collision(ofProjectile: projectile as! Projectile, withCactus: cactus as! Cactus)
+            if let cactus = (contact.bodyA.categoryBitMask == PhysicsCategory.cactus.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Cactus,
+               let projectile = (contact.bodyA.categoryBitMask == PhysicsCategory.playerBullet.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Projectile {
+                collision(ofProjectile: projectile, withCactus: cactus)
+            }
          
         // Player <-> Item
         case PhysicsCategory.player.rawValue | PhysicsCategory.item.rawValue:
             
-            let player = contact.bodyA.categoryBitMask == PhysicsCategory.player.rawValue ? contact.bodyA.node : contact.bodyB.node
-            let item = contact.bodyA.categoryBitMask == PhysicsCategory.item.rawValue ? contact.bodyA.node : contact.bodyB.node
-
-            collision(ofPlayer: player as! Player, withItem: item as! Item)
-        
+            if let player = (contact.bodyA.categoryBitMask == PhysicsCategory.player.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Player,
+               let item = (contact.bodyA.categoryBitMask == PhysicsCategory.item.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Item {
+                collision(ofPlayer: player, withItem: item)
+            }
+            
             
         // Enemy Bullet <-> Player
         case PhysicsCategory.enemyBullet.rawValue | PhysicsCategory.player.rawValue:
             
-            let player = contact.bodyA.categoryBitMask == PhysicsCategory.player.rawValue ? contact.bodyA.node : contact.bodyB.node
-            let enemyBullet = contact.bodyA.categoryBitMask == PhysicsCategory.enemyBullet.rawValue ? contact.bodyA.node : contact.bodyB.node
-        
-            collision(ofEnemyBullet: enemyBullet as! Projectile, withPlayer: player as! Player)
-            
+            if let player = (contact.bodyA.categoryBitMask == PhysicsCategory.player.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Player,
+               let enemyBullet = (contact.bodyA.categoryBitMask == PhysicsCategory.enemyBullet.rawValue ? contact.bodyA.node : contact.bodyB.node) as? Projectile {
+                collision(ofEnemyBullet: enemyBullet, withPlayer: player)
+            }
         default:
             print("Collision not implemented: \(contact.bodyA) \(contact.bodyB)")
             break

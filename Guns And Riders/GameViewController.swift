@@ -10,15 +10,21 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        #if targetEnvironment(macCatalyst)
+        let scene = MenuScene(size: CGSize(width: 1024 , height: 576))
+        scene.scaleMode = .aspectFit
+        #else
         let scene = MenuScene(size: view.bounds.size)
-        let skView = view as! SKView
-//        skView.showsFPS = true
-//        skView.showsNodeCount = true
-//        skView.showsPhysics = true
         scene.scaleMode = .aspectFill
+        #endif
+        
+        let skView = view as! SKView
         skView.presentScene(scene)
     }
 
@@ -41,5 +47,19 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        (view as! SKView).scene?.pressesBegan(presses, with: event)
+    }
+    override func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        (view as! SKView).scene?.pressesChanged(presses, with: event)
+    }
+    override func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        (view as! SKView).scene?.pressesCancelled(presses, with: event)
+    }
+    override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        (view as! SKView).scene?.pressesEnded(presses, with: event)
     }
 }

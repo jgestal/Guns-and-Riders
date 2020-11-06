@@ -49,7 +49,7 @@ class Indian: Enemy {
     }
     
     override func randomAction() -> EnemyAction {
-        let random = Int.random(0, 10)
+        let random = Int.random(in: 0 ... 10)
         switch random {
         case 0...5:
             return .walk
@@ -60,9 +60,9 @@ class Indian: Enemy {
         }
     }
     override func enemyWalk() -> (CGFloat, CGFloat, Double) {
-        let dx = CGFloat.random(-250, -80)
-        let dy = CGFloat.random(-180, 180)
-        let duration = Double.random(0.5, 1.5)
+        let dx = CGFloat.random(in: -250 ... -80)
+        let dy = CGFloat.random(in: -180 ... 180)
+        let duration = Double.random(in: 0.5 ... 1.5)
         return (dx,dy,duration)
     }
 }

@@ -157,7 +157,7 @@ open class AnalogJoystick: SKNode {
         
         disabled = false
         let velocityLoop = CADisplayLink(target: self, selector: #selector(listen))
-        velocityLoop.add(to: RunLoop.current, forMode: RunLoopMode(rawValue: RunLoopMode.commonModes.rawValue))
+        velocityLoop.add(to: RunLoop.current, forMode: RunLoop.Mode(rawValue: RunLoop.Mode.common.rawValue))
     }
     
     convenience init(diameters: (substrate: CGFloat, stick: CGFloat?), colors: (substrate: UIColor?, stick: UIColor?)? = nil, images: (substrate: UIImage?, stick: UIImage?)? = nil) {

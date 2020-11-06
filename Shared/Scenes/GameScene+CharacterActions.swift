@@ -15,6 +15,8 @@ import SpriteKit
 extension GameScene {
     
     func playerShoot() {
+
+        if player.isDead { return }
         
         func shootTo(dy: CGFloat) {
             let vector = CGVector.normalized(from: player.position, to: CGPoint(x: player.position.x + player.xScale, y: player.position.y + dy))
@@ -60,7 +62,7 @@ extension GameScene {
     
     func enemyActionWait(_ enemy: Enemy) {
         enemy.action = .wait
-        let duration = Double.random(0.5, 2.0)
+        let duration = Double.random(in: 0.5 ... 2.0)
         let wait = SKAction.wait(forDuration: duration)
         let restore = SKAction.run { enemy.action = .none }
         enemy.run(SKAction.sequence([wait, restore]))

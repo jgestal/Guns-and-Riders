@@ -32,7 +32,7 @@ class MenuScene: SKScene {
         
         let w = size.width
         let h = size.height
-        let zoom : CGFloat = Constants.device == .pad ? 5 : 4
+        let zoom : CGFloat = Constants.DEVICE == .pad ? 5 : 4
         ground.position = CGPoint(x: 0, y: h / 2 - ground.tileHeight)
         
         let animDuration = 2.0
@@ -126,10 +126,13 @@ class MenuScene: SKScene {
             switch name {
             case "StartGame":
                 let scene = GameScene(size: size)
+                scene.scaleMode = scaleMode
                 self.view?.presentScene(scene)
             case "Credits":
                 let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
                 let scene = CreditsScane(size: size)
+                scene.scaleMode = scaleMode
+                
                 self.view?.presentScene(scene, transition:reveal)
             case "Scores":
                 print("Hi-Scores")

@@ -23,17 +23,10 @@ class CreditsScane: SKScene {
     
     var cards = [Card]()
     
-    var removeAdsBox : SKSpriteNode!
-    
+    var firstTimeFourAcesTrick = true
     
     override func didMove(to view: SKView) {
-        NotificationCenter.default.addObserver(self, selector: #selector(CreditsScane.handlePurchaseNotification(_:)),
-                                               name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification),
-                                               object: nil)
-
-        // Disable Trick
-        //UserDefaults.standard.setValue(false, forKey: "fourAcesTrick")
-        
+    
         SoundBox.shared.playMusic(music: "credits", numberOfLoops: -1)
         
         cardsBackground.spawn(parentNode: self, position: CGPoint(x: 0, y: 0), size: self.size)
@@ -47,7 +40,6 @@ class CreditsScane: SKScene {
         posterKanfor.position = CGPoint(x: size.width / 2, y: size.height / 1.5)
         table.addChild(posterKanfor)
         
-        
         let eightOfTrebols = Card(cardType: .eigthOfTrebols)
         eightOfTrebols.position = CGPoint(x: size.width / 6, y: 60)
         table.addChild(eightOfTrebols)
@@ -57,11 +49,6 @@ class CreditsScane: SKScene {
         eightOfClubs.position = CGPoint(x: (size.width / 6) + 80, y: 60)
         table.addChild(eightOfClubs)
         cards.append(eightOfClubs)
-        
-        if !IAPHelper.shared.isAdsEnabled() {
-            eightOfClubs.changeToAce()
-            eightOfTrebols.changeToAce()
-        }
         
         let aceOfClubs = Card(cardType: .aceOfClubs)
         aceOfClubs.position = CGPoint(x: (size.width / 6) + 160, y: 60)
@@ -76,25 +63,7 @@ class CreditsScane: SKScene {
         // Menu Button
         let menuBox = placeSpriteNode("menu_box", parent: self, name: "menu")
         menuBox.position = CGPoint(x: self.size.width - menuBox.size.width / 2 - 10, y: self.size.height - menuBox.size.height / 2 - 10)
-        
-        // Remove Ads Button
-        removeAdsBox = placeSpriteNode("remove_ads_box", parent: self, name: "removeAds")
-        removeAdsBox.position = CGPoint(x: self.size.width - removeAdsBox.size.width / 2 - 10, y: 100)
-        
-        // Remove Ads
-        let removeAds = placeLabelNode("REMOVE ADS", fontSize: 26, parent: removeAdsBox, name: "removeAds")
-        removeAds.position = CGPoint(x: 0, y: 40)
-        
-        // The Most Wanted
-        let theMostWanted = placeSpriteNode("the_most_wanted", parent: removeAdsBox, name: "removeAds")
-        theMostWanted.setScale(0.25)
-        theMostWanted.position = CGPoint(x: 0, y: -10)
-        
-        // Restore Purchases
-        let restorePurchases = placeLabelNode("Restore Purchase", fontSize: 16, parent: removeAdsBox, name: "restorePurchase")
-        restorePurchases.position = CGPoint(x: 0, y: -80)
-        
-        showOrHideRemoveAdsBox()
+                        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -108,15 +77,10 @@ class CreditsScane: SKScene {
         
         if nodeTouched.name == "menu" {
             SoundBox.shared.stopMusic()
-            view?.presentScene(MenuScene(size:size))
+            let scene = MenuScene(size: size)
+            scene.scaleMode = scaleMode
+            view?.presentScene(scene)
             print("Menu")
-        } else if nodeTouched.name == "removeAds" {
-            print("Remove Ads")
-            IAPHelper.shared.buyProductWithID("guns.and.riders_remove.ads")
-        } else if nodeTouched.name == "restorePurchase" {
-            print("Restore Purchase")
-            IAPHelper.shared.restorePurchases()
-            
         } else if object == nil {
             if let card = nodeTouched as? Card {
                 if touch.tapCount > 1 {
@@ -162,29 +126,10 @@ class CreditsScane: SKScene {
     }
     
     func checkIfFourAces() {
-        if IAPHelper.shared.isRemoveAdsPurchased() { return }
-        let fourAces = cards.reduce(true, { $0 && $1.isAce() })
-        if fourAces {
-            // first trick
-            let trickEnabled = UserDefaults.standard.bool(forKey: "fourAcesTrick")
-            if !trickEnabled  {
-                print("First 4 Aces Trick")
-                run(SoundBox.shared.fxCheat)
-                UserDefaults.standard.setValue(true, forKey: "fourAcesTrick")
-                showOrHideRemoveAdsBox()
-            }
-        }
-    }
-    
-    func showOrHideRemoveAdsBox() {
-        removeAdsBox.isHidden = !IAPHelper.shared.isAdsEnabled() || !IAPHelper.canMakePayments()
-    }
-    
-    @objc func handlePurchaseNotification(_ notification: Notification) {
-        guard let productID = notification.object as? String else { return }
-        if productID == IAPHelper.removeAdsProductID {
-            cards.forEach { $0.changeToAce() }
-            showOrHideRemoveAdsBox()
+        
+        if firstTimeFourAcesTrick && cards.reduce(true, { $0 && $1.isAce() }) {
+            run(SoundBox.shared.fxCheat)
+            firstTimeFourAcesTrick = false
         }
     }
 }

@@ -10,11 +10,9 @@ import SpriteKit
 
 struct Constants {
     
-
-    
     static let SPRITES_ATLAS = SKTextureAtlas.init(named: "sprites.atlas")
     
-    static let device = UIScreen.main.traitCollection.userInterfaceIdiom
+    static let DEVICE = UIScreen.main.traitCollection.userInterfaceIdiom
     
     static let FONT_NAME = "Old Pixel-7"
         
@@ -27,14 +25,14 @@ struct Constants {
     static let ZPOS_GAME_SPRITE = CGFloat(1000)
     
     static var GAME_SCALE : CGFloat {
-        return Constants.device == .pad ? 0.8 : 0.6
+        return Constants.DEVICE == .pad ? 0.8 : 0.6
     }
     static let GROUND_SAFE_AREA_BOTTOM = CGFloat(40)
     static let GROUND_SAFE_AREA_TOP = CGFloat(80)
     
     static let PLAYER_OFFSET_X = CGFloat(400)
     static var PLAYER_VX : CGFloat {
-        return Constants.device == .pad ? CGFloat(120) : CGFloat(95)
+        return Constants.DEVICE == .pad ? CGFloat(120) : CGFloat(95)
     }
     static let PLAYER_INITIAL_BULLETS = 50
     static let PLAYER_MAX_BULLETS = 100

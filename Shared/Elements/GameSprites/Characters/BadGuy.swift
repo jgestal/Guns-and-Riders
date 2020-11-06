@@ -8,7 +8,6 @@
 
 import SpriteKit
 
-
 class BadGuy: Enemy {
     
     static var baseAnimation : SKAction!
@@ -39,7 +38,7 @@ class BadGuy: Enemy {
     }
     
     override func randomAction() -> EnemyAction {
-        let random = Int.random(0, 10)
+        let random = Int.random(in: 0 ... 10)
         switch random {
         case 0...4:
             return .walk
@@ -51,9 +50,9 @@ class BadGuy: Enemy {
     }
     
     override func enemyWalk() -> (CGFloat, CGFloat, Double) {
-        let dx = CGFloat.random(-200, -50)
-        let dy = CGFloat.random(-200, 200)
-        let duration = Double.random(1, 3)
+        let dx = CGFloat.random(in: -200 ... -50)
+        let dy = CGFloat.random(in: -200 ... 200)
+        let duration = Double.random(in: 1 ... 3)
         return (dx,dy,duration)
     }
 }

@@ -23,7 +23,7 @@ extension GameScene {
         ground.spawn(parentNode: world, position: position, size: size)
     }
     
-    #if os(iOS)
+    #if os(iOS) && !targetEnvironment(macCatalyst)
     func setupJoystick() {
         joystick.zPosition = Constants.ZPOS_JOYSTICK
         joystick.position = CGPoint(x: 70, y: 80)

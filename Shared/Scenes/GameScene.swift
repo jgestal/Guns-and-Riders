@@ -7,6 +7,9 @@
 //
 
 import SpriteKit
+#if targetEnvironment(macCatalyst)
+import AppKit
+#endif
 //https://cartoonsmart.com/how-to-support-external-game-controllers-with-swift-2-and-sprite-kit-for-the-new-apple-tv/
 
 
@@ -19,7 +22,7 @@ class GameScene: SKScene {
     let soundBox = SoundBox.shared
     
     // Add Joystick on iOS Devices
-    #if os(iOS)
+    #if os(iOS) && !targetEnvironment(macCatalyst)
     let joystick = AnalogJoystick(diameters: (110,54), images: (UIImage(named: "joystick_background"), UIImage(named: "joystick_ball")))
     #endif
     
@@ -34,7 +37,11 @@ class GameScene: SKScene {
     var indiansKilled = 0
     var badguysKilled = 0
     
-
+    var keyUp = false
+    var keyDown = false
+    var keyLeft = false
+    var keyRight = false
+    
     override func didMove(to view: SKView) {
         
         SoundBox.shared.playMusic(music: "game", numberOfLoops: -1)
@@ -44,7 +51,7 @@ class GameScene: SKScene {
         gameMaxY = ground.position.y + ground.tileHeight - Constants.GROUND_SAFE_AREA_TOP
         gameMinY = ground.position.y + Constants.GROUND_SAFE_AREA_BOTTOM
         
-        #if os(iOS)
+        #if os(iOS) && !targetEnvironment(macCatalyst)
         setupJoystick()
         #endif
         
@@ -80,28 +87,15 @@ class GameScene: SKScene {
         }
     }
     
-    override func didSimulatePhysics() {
+    override func didSimulatePhysics () {
         
         if !player.isDead {
             
             player.progress = player.position.x - player.initialPositionX
             ground.checkForReposition(playerProgress: player.progress)
             backgrounds.forEach { $0.updatePosition(playerProgress: player.progress) }
-            
-            #if os(iOS)
-            joystick.trackingHandler = { jData in
-                if !self.player.isDead {
-                    let yDisplacement = jData.velocity.y * self.player.vy * 0.10
-                    self.player.position.y += yDisplacement
-                    self.player.xScale = jData.velocity.x < 0 ? -1 : 1
-                }
-            }
-            #endif
-            
-            // Bounds
-            if player.position.y > self.gameMaxY { player.position.y = self.gameMaxY }
-            if player.position.y < self.gameMinY { player.position.y = self.gameMinY }
-            
+            readInput()
+            restrictPlayerPosition()
             updateWorld()
         }
         
@@ -109,25 +103,113 @@ class GameScene: SKScene {
         updateSprites()
     }
     
+    private func readInput() {
+        // Read Input
+        
+        #if os(iOS) && !targetEnvironment(macCatalyst)
+        joystick.trackingHandler = { jData in
+            if !self.player.isDead {
+                let yDisplacement = jData.velocity.y * 0.10 * self.player.vy
+                print("Velocity: \(jData.velocity.y)")
+                self.player.position.y += yDisplacement
+                self.player.xScale = jData.velocity.x < 0 ? -1 : 1
+            }
+        }
+        #elseif targetEnvironment(macCatalyst)
+        
+        var yDisplacement = CGFloat(0)
+        if (keyUp && !keyDown) {
+            yDisplacement = 5 * self.player.vy
+        } else if (!keyUp && keyDown) {
+            yDisplacement = -5 * self.player.vy
+        }
+        
+        player.position.y += yDisplacement
+        player.xScale = keyLeft && !keyRight ? -1 : 1
+
+        #endif
+    }
+    
+    private func restrictPlayerPosition() {
+        // Bounds
+        if player.position.y > self.gameMaxY { player.position.y = self.gameMaxY }
+        if player.position.y < self.gameMinY { player.position.y = self.gameMinY }
+    }
+    
     //*****************************
     // MARK: - Controls
     //*****************************
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+            
         guard let firstTouch = touches.first else { return }
-        if !player.isDead {
-            playerShoot()
-        } else {
+        
+        playerShoot()
+        
+        if player.isDead {
             let location = firstTouch.location(in: self)
             let nodeTouched = atPoint(location)
             
             if nodeTouched.name == "playAgainBtn" {
-                view?.presentScene(GameScene(size: size))
+                let scene = GameScene(size: size)
+                scene.scaleMode = scaleMode
+                view?.presentScene(scene)
             }
             else if nodeTouched.name == "menuBtn" {
-                view?.presentScene(MenuScene(size: size))
+                let scene = MenuScene(size: size)
+                scene.scaleMode = scaleMode
+                view?.presentScene(scene)
             }
         }
     }
+    
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+
+        for press in presses {
+            switch (press.key?.keyCode) {
+            
+            case .keyboardUpArrow:
+                keyUp = true
+            case .keyboardDownArrow:
+                keyDown = true
+            case .keyboardLeftArrow:
+                keyLeft = true
+            case .keyboardRightArrow:
+                keyRight = true
+            case .keyboardSpacebar:
+                playerShoot()
+                
+            default:
+                break
+            }
+        }
+
+    }
+    override func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent?) {}
+    override func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        cancel(presses)
+    }
+    override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        cancel(presses)
+    }
+    
+    private func cancel(_ presses: Set<UIPress>) {
+        for press in presses {
+            switch (press.key?.keyCode) {
+            case .keyboardUpArrow:
+                keyUp = false
+            case .keyboardDownArrow:
+                keyDown = false
+            case .keyboardLeftArrow:
+                keyLeft = false
+            case .keyboardRightArrow:
+                keyRight = false
+            default:
+                break
+            }
+        }
+    }
+    
 }
 
 //MARK: Update
@@ -145,9 +227,7 @@ extension GameScene {
     func updateWorld() {
         let worldXPos = -(player.position.x * world.xScale - self.size.width / 2)
         var worldYPos = -(player.position.y * world.yScale - self.size.height / 2)
-        if worldYPos > 0 {
-            worldYPos = 0
-        }
+        worldYPos = worldYPos > 0 ? 0 : worldYPos
         world.setScale(Constants.GAME_SCALE)
         world.position = CGPoint(x: worldXPos, y: worldYPos)
     }
